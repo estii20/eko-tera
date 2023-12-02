@@ -51,7 +51,8 @@
     <!--</nav>-->
 
     <!-- Callout -->
-    <article class="container mt-3">
+    <div class="container-fluid callout-container">
+    <div class="row d-none d-sm-block">
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning text-center">
@@ -60,10 +61,13 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>Solar Carports Europe</h1>
+                    <h1 class="jumbotron-header">Solar Carports Europe</h1>
+                    <hr class="block-divider block-divider--orange">
                     <div class="lead">
                         <p>
                             Explore our excellent cantilever solar charging carport. We are proud to present
@@ -75,18 +79,20 @@
                         </p>
                         <p class="text-muted"><small>- Cantilever Solar Charging Carports installed throughout
                                 Europe</small>
-                        <p><button class="btn btn-lg btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        <p><button class="btn btn--cta btn--red" data-bs-toggle="modal" data-bs-target="#contactModal">
                                 Contact Us
                             </button>
                         </p>
                     </div>
+                </div>
             </div>
         </div>
         </section>
         <!-- /.callout -->
-        <hr>
+        </div>
 
         <!-- Features -->
+        <div class="features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
@@ -129,11 +135,13 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
         <!-- /.features -->
-        <hr>
+        </div>
 
         <!-- Quotes -->
+        <div class="container quotes-container">
         <section class="quotes mt-auto">
             <div class="row">
                 <div class="col-12 my-5">
@@ -175,9 +183,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <!-- /.quotes -->
-    </article>
+    </div>
 
     <!-- Footer -->
     <footer class="mt-5 pt-5 pb-5 footer mt-auto bg-dark">

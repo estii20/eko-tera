@@ -202,8 +202,9 @@ h3 {
     color: white;
 }
 
-#model-container {
-    width: 100%;
-    height: 500px;
+h4 i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+    color: #21209C;
 }
-    

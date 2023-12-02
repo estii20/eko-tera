@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Description and keywords -->
+    <meta name="description" content="Solar Panel Carport for Electric Vehicle Charging available in Europe">
+    <meta name="keywords"
+        content="Solar Carport, Solar Panel Carport, Electric Vehicle Charging, Sustainable Carport, Renewable Energy, Green Energy, EV Charging Canopies, Europe">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- JavaScript Three -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <!-- JavaScript GTFLoader -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Solar Carport E-commerce Site - Features</title>
+</head>
+
+<body>
+    <div class="navalert-container">
+        <div class="container-fluid alert-container">
+            <div class="row d-none d-sm-block">
+                <div class="col-12">
+                    <div class="site-wide-alert alert alert-warning text-center">
+                        <strong>We are waiting to hear from you! Call us today for a quote.</strong>
+                        <span>
+                            <i class="fa-solid fa-square-phone"></i> +39 00 00 00 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<nav>-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-white" href="index.html">Logo - Solar Carports Europe</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Pricing</a>
+                    </li>
+                </ul>
+                <span class="navbar-text d-none d-md-block text-white-50"> Solar Carports Europe + 39 00 00 00 </span>
+            </div>
+        </nav>
+    </div>
+    <!--</nav>-->
+
+<div id="model-container"></div>
+<script>
+    // Create a Three.js scene
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('model-container').appendChild(renderer.domElement);
+
+    // Load 3D model
+    const loader = new THREE.GLTFLoader(); // Change this based on the type of model
+    loader.load('images/SolD v2.obj.glb', (gltf) => {
+        scene.add(gltf.scene);
+    }, undefined, (error) => {
+        console.error(error); // Log any errors encountered while loading
+    });
+
+    // Position the camera
+    camera.position.z = 5;
+
+    // Render loop
+    const animate = () => {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+    };
+    animate();
+</script>
+
+    <!-- Footer -->
+    <footer class="mt-5 pt-5 pb-5 footer mt-auto bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12">
+                    <h2 class="mt-lg-0 mt-sm-3">
+                        <a href="#" class="about_link text-white" aria-label="About Solar Carport Europe"> About </a>
+                    </h2>
+                    <p class="pr-5 text-white-50"> Photovoltaic system carports </p>
+                    <p class="pr-5 text-white-50"> Aluminium carport with sandwich panels </p>
+                </div>
+                <!-- Product List nav (displaying products) -->
+                <div class="col-lg-3 col-xs-12 links">
+                    <h2 class="mt-lg-0 mt-sm-3 text-white">Products</h2>
+                    <ul class="m-0 p-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link mb-0 text-white-50">List of products </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link mb-0 text-white-50">List of products </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link mb-0 text-white-50">List of products </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link mb-0 text-white-50">List of products </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                    <h2 class="mt-lg-0 mt-sm-4 text-white" aria-label="Contact Information">Contact Us</h2>
+                    <p class="mb-0 text-white-50">
+                        <i class="fa fa-envelope-o mr-3"></i> solar-carports-europe@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <p class="col-12 m-0 text-center">
+                    <small class="text-white-50 text-center">© Solar Carport Europe 2023</small>
+                </p>
+                <p class="col-12 m-0 text-center">
+                    <small class="text-white-50 text-center">Images © Unsplash.com</small>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- /.footer -->
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="Enter email" required>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/f75c96defe.js" crossorigin="anonymous" defer></script>
+</body>
+
+</html>

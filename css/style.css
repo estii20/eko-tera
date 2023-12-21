@@ -45,17 +45,11 @@ h3 {
 
 .callout-container {
     height: 100vh;
-
     background: url('../images/asia-chang-Yr-PvhKiorM-unsplash.jpg') no-repeat bottom right fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: relative;
 }
 
@@ -222,7 +216,8 @@ h4 i {
     color: #0066CC;
 }
 
-.card-img-top {
+/* Project section */
+.project {
     height: 200px;
     /* Set the desired height */
     object-fit: cover;

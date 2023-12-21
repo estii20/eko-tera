@@ -26,7 +26,7 @@ h3 {
 /* Containers */
 
 .container-wrapper--red {
-    background-color: #FDB827;
+    background-color: #0066CC;
     color: white;
 }
 
@@ -83,7 +83,7 @@ h3 {
     width: 75px;
     height: 5px;
     border: 0;
-    background-color: #21209C;
+    background-color: #0066CC;
 }
 
 .block-divider--short {
@@ -128,8 +128,8 @@ h3 {
 
 .btn--red {
     color: white;
-    background-color: #21209C;
-    border-color: #21209C;
+    background-color: #0066CC;
+    border-color: #0066CC;
 }
 
 .btn--red:hover,
@@ -203,7 +203,7 @@ h3 {
     min-width: 100px;
     font-weight: bold;
     margin-top: 10px;
-    color: #21209C;
+    color: #0066CC;
 }
 
 .feature .btn:hover,
@@ -219,5 +219,12 @@ h4 i {
     margin-bottom: 20px;
     font-size: 45px;
     line-height: 45px;
-    color: #21209C;
+    color: #0066CC;
+}
+
+.card-img-top {
+    height: 200px;
+    /* Set the desired height */
+    object-fit: cover;
+    /* Maintain aspect ratio */
 }
